@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* Dead Kansas — distressed TWD-style display font */
+@font-face {
+  font-family: "Dead Kansas";
+  src: url("/fonts/Dead Kansas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-background: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-light: #1E1E1E;
+  --color-accent: #c7a25d;
+  --color-accent-dark: #a8863d;
+  --color-accent-glow: #d4b36e;
+  --color-blood: #8B1E1E;
+  --color-blood-light: #B22B2B;
+  --color-fog: #9CA3AF;
+  --color-fog-light: #D1D5DB;
+  --color-body: #d9d9d9;
+
+  --font-sans: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Dead Kansas", "Oswald", serif;
+  --font-heading: "Oswald", serif;
+  --font-body: "Oswald", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: var(--color-background);
+  color: var(--color-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Film frame vignette — edge damage & scratches ---- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.9;
+  background-image: url("/images/overlays/old film grain noise effect_9018696.png");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: overlay;
+}
+
+/* ---- Film grain overlay — fine scattered noise ---- */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("/images/overlays/old film grain noise effect_9171875.png");
+  background-repeat: repeat;
+  background-size: 900px 506px;
+  mix-blend-mode: overlay;
+}
+
+/* ---- Timeline node pulse ---- */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(199, 162, 93, 0.3), 0 0 20px rgba(199, 162, 93, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(199, 162, 93, 0.6), 0 0 30px rgba(199, 162, 93, 0.2);
+  }
+}
+
+.timeline-node-pulse {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ---- Fog drift for quote section ---- */
+@keyframes fog-drift-1 {
+  0% { transform: translateX(-10%) translateY(0); opacity: 0.04; }
+  50% { transform: translateX(5%) translateY(-8px); opacity: 0.07; }
+  100% { transform: translateX(-10%) translateY(0); opacity: 0.04; }
+}
+
+@keyframes fog-drift-2 {
+  0% { transform: translateX(10%) translateY(0); opacity: 0.03; }
+  50% { transform: translateX(-5%) translateY(6px); opacity: 0.06; }
+  100% { transform: translateX(10%) translateY(0); opacity: 0.03; }
+}
+
+.fog-layer-1 {
+  animation: fog-drift-1 12s ease-in-out infinite;
+}
+
+.fog-layer-2 {
+  animation: fog-drift-2 16s ease-in-out infinite;
+}
+
+/* ---- Memorial candle flame flicker ---- */
+@keyframes flame-flicker {
+  0%, 100% {
+    transform: scaleY(1) scaleX(1) translateX(0);
+    opacity: 0.8;
+  }
+  25% {
+    transform: scaleY(1.15) scaleX(0.9) translateX(-1px);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scaleY(0.9) scaleX(1.05) translateX(1px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: scaleY(1.1) scaleX(0.95) translateX(-0.5px);
+    opacity: 0.85;
+  }
+}
+
+.memorial-flame {
+  animation: flame-flicker 2s ease-in-out infinite;
+  filter: blur(0.5px);
+  box-shadow:
+    0 0 8px rgba(245, 158, 11, 0.4),
+    0 0 20px rgba(245, 158, 11, 0.2),
+    0 -4px 12px rgba(245, 158, 11, 0.15);
+}
+
+/* ---- Biography drop cap ---- */
+.drop-cap::first-letter {
+  font-family: "Dead Kansas", serif;
+  color: var(--color-accent);
+  float: left;
+  font-size: 4.5em;
+  line-height: 0.75;
+  margin-right: 0.12em;
+  margin-top: 0.08em;
+}
+
+/* Fix bg-fixed on touch devices (iOS Safari) */
+@media (hover: none) and (pointer: coarse) {
+  .bg-fixed {
+    background-attachment: scroll !important;
+  }
+}
+
+/* Scrollbar — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333 var(--color-background);
+}
+
+/* Scrollbar — Webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+::selection {
+  background-color: rgba(199, 162, 93, 0.3);
+  color: #fff;
+}
