@@ -16,7 +16,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <SpoilerProvider>
       <AnimatePresence>
         {loading && (
