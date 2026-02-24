@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import { assetUrl } from "../../utils/assetUrl"
 
 const quotes = [
   { text: "We are the walking dead.", author: "Rick Grimes" },
@@ -63,7 +64,7 @@ export default function QuoteSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('/images/hero-bg.png')",
+          backgroundImage: `url('${assetUrl("/images/hero-bg.png")}')`,
           filter: "saturate(0.25) brightness(0.2)",
         }}
       />

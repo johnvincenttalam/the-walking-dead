@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
+import { assetUrl } from "../utils/assetUrl"
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
       {/* Rick cutout — faded into background */}
       <img
-        src="/images/rpynnv_large.png"
+        src={assetUrl("/images/rpynnv_large.png")}
         alt=""
         aria-hidden="true"
         className="absolute right-0 bottom-0 h-[80%] opacity-[0.07] pointer-events-none object-contain"

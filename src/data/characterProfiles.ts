@@ -1,4 +1,5 @@
 import type { CharacterProfile } from "../types/characterProfile"
+import { assetUrl } from "../utils/assetUrl"
 
 export const characterProfiles: CharacterProfile[] = [
   // ─── RICK GRIMES ──────────────────────────────────────────────────────────────
@@ -112,11 +113,11 @@ export const characterProfiles: CharacterProfile[] = [
       "This isn't a democracy anymore.",
     ],
     galleryImages: [
-      "/images/characters/rick.jpg",
-      "/images/characters/rick1.jpg",
-      "/images/characters/rick2.jpg",
-      "/images/characters/rick3.jpg",
-      "/images/characters/rick4.jpg",
+      assetUrl("/images/characters/rick.jpg"),
+      assetUrl("/images/characters/rick1.jpg"),
+      assetUrl("/images/characters/rick2.jpg"),
+      assetUrl("/images/characters/rick3.jpg"),
+      assetUrl("/images/characters/rick4.jpg"),
     ],
   },
 
@@ -231,11 +232,11 @@ export const characterProfiles: CharacterProfile[] = [
       "I'll be the last man standing.",
     ],
     galleryImages: [
-      "/images/characters/daryl.jpg",
-      "/images/characters/daryl1.jpg",
-      "/images/characters/daryl2.jpg",
-      "/images/characters/daryl3.jpg",
-      "/images/characters/daryl4.jpg",
+      assetUrl("/images/characters/daryl.jpg"),
+      assetUrl("/images/characters/daryl1.jpg"),
+      assetUrl("/images/characters/daryl2.jpg"),
+      assetUrl("/images/characters/daryl3.jpg"),
+      assetUrl("/images/characters/daryl4.jpg"),
     ],
   },
 
@@ -347,11 +348,11 @@ export const characterProfiles: CharacterProfile[] = [
       "You can breathe. You can blink. You can cry. Hell, you're all gonna be doing that.",
     ],
     galleryImages: [
-      "/images/characters/negan.jpg",
-      "/images/characters/negan1.jpg",
-      "/images/characters/negan2.jpg",
-      "/images/characters/negan3.jpg",
-      "/images/characters/negan4.jpg",
+      assetUrl("/images/characters/negan.jpg"),
+      assetUrl("/images/characters/negan1.jpg"),
+      assetUrl("/images/characters/negan2.jpg"),
+      assetUrl("/images/characters/negan3.jpg"),
+      assetUrl("/images/characters/negan4.jpg"),
     ],
   },
 
@@ -455,11 +456,11 @@ export const characterProfiles: CharacterProfile[] = [
       "People you love, they made you who you are.",
     ],
 galleryImages: [
-      "/images/characters/glenn.jpg",
-      "/images/characters/glenn1.jpg",
-      "/images/characters/glenn2.jpg",
-      "/images/characters/glenn3.jpg",
-      "/images/characters/glenn4.jpg",
+      assetUrl("/images/characters/glenn.jpg"),
+      assetUrl("/images/characters/glenn1.jpg"),
+      assetUrl("/images/characters/glenn2.jpg"),
+      assetUrl("/images/characters/glenn3.jpg"),
+      assetUrl("/images/characters/glenn4.jpg"),
     ],
   },
 
@@ -563,11 +564,11 @@ galleryImages: [
       "We don't get to be upset. We have to keep going.",
     ],
     galleryImages: [
-      "/images/characters/michonne.jpg",
-      "/images/characters/michonne1.jpg",
-      "/images/characters/michonne2.jpg",
-      "/images/characters/michonne3.jpg",
-      "/images/characters/michonne4.jpg",
+      assetUrl("/images/characters/michonne.jpg"),
+      assetUrl("/images/characters/michonne1.jpg"),
+      assetUrl("/images/characters/michonne2.jpg"),
+      assetUrl("/images/characters/michonne3.jpg"),
+      assetUrl("/images/characters/michonne4.jpg"),
     ],
   },
 
@@ -673,11 +674,11 @@ galleryImages: [
       "You don't have to like what I did. You just have to accept it.",
     ],
     galleryImages: [
-      "/images/characters/carol.jpg",
-      "/images/characters/carol1.jpg",
-      "/images/characters/carol2.jpg",
-      "/images/characters/carol3.jpg",
-      "/images/characters/carol4.jpg",
+      assetUrl("/images/characters/carol.jpg"),
+      assetUrl("/images/characters/carol1.jpg"),
+      assetUrl("/images/characters/carol2.jpg"),
+      assetUrl("/images/characters/carol3.jpg"),
+      assetUrl("/images/characters/carol4.jpg"),
     ],
   },
 
@@ -783,11 +784,11 @@ galleryImages: [
       "We've already lost enough. We can't lose any more.",
     ],
     galleryImages: [
-      "/images/characters/maggie.jpg",
-      "/images/characters/maggie1.jpg",
-      "/images/characters/maggie2.jpg",
-      "/images/characters/maggie3.jpg",
-      "/images/characters/maggie4.jpg",
+      assetUrl("/images/characters/maggie.jpg"),
+      assetUrl("/images/characters/maggie1.jpg"),
+      assetUrl("/images/characters/maggie2.jpg"),
+      assetUrl("/images/characters/maggie3.jpg"),
+      assetUrl("/images/characters/maggie4.jpg"),
     ],
   },
 
@@ -881,11 +882,11 @@ galleryImages: [
       "Mere words cannot express how truly sorry I am for what I've done.",
     ],
     galleryImages: [
-      "/images/characters/governor.jpg",
-      "/images/characters/governor1.jpg",
-      "/images/characters/governor2.jpg",
-      "/images/characters/governor3.jpg",
-      "/images/characters/governor4.jpg",
+      assetUrl("/images/characters/governor.jpg"),
+      assetUrl("/images/characters/governor1.jpg"),
+      assetUrl("/images/characters/governor2.jpg"),
+      assetUrl("/images/characters/governor3.jpg"),
+      assetUrl("/images/characters/governor4.jpg"),
     ],
   },
 
@@ -987,11 +988,11 @@ galleryImages: [
       "A sad soul can kill quicker than a germ.",
     ],
     galleryImages: [
-      "/images/characters/hershel.jpg",
-      "/images/characters/hershel1.jpg",
-      "/images/characters/hershel2.jpg",
-      "/images/characters/hershel3.jpg",
-      "/images/characters/hershel4.jpg",
+      assetUrl("/images/characters/hershel.jpg"),
+      assetUrl("/images/characters/hershel1.jpg"),
+      assetUrl("/images/characters/hershel2.jpg"),
+      assetUrl("/images/characters/hershel3.jpg"),
+      assetUrl("/images/characters/hershel4.jpg"),
     ],
   },
 
@@ -1088,11 +1089,11 @@ galleryImages: [
       "I'm not gonna stand here and wait for you to decide which one of us you want to kill.",
     ],
     galleryImages: [
-      "/images/characters/carl.jpg",
-      "/images/characters/carl1.jpg",
-      "/images/characters/carl2.jpg",
-      "/images/characters/carl3.jpg",
-      "/images/characters/carl4.jpg",
+      assetUrl("/images/characters/carl.jpg"),
+      assetUrl("/images/characters/carl1.jpg"),
+      assetUrl("/images/characters/carl2.jpg"),
+      assetUrl("/images/characters/carl3.jpg"),
+      assetUrl("/images/characters/carl4.jpg"),
     ],
   },
 ]

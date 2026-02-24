@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import { assetUrl } from "../../utils/assetUrl"
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -54,7 +55,7 @@ export default function HeroSection() {
           style={{ filter: "saturate(0.5) brightness(0.4)" }}
         >
           <source
-            src="/video/Zombie Invasion Live Wallpaper _ 4K Ultra HD Desktop Background (FREE Download).mp4"
+            src={assetUrl("/video/Zombie Invasion Live Wallpaper _ 4K Ultra HD Desktop Background (FREE Download).mp4")}
             type="video/mp4"
           />
         </video>

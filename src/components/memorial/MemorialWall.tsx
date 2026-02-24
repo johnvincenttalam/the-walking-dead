@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import { assetUrl } from "../../utils/assetUrl"
 import { characters } from "../../data/characters"
 import { memorialEntries } from "../../data/memorialData"
 import MemorialCard from "./MemorialCard"
@@ -36,7 +37,7 @@ export default function MemorialWall() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('/images/TWDS11C_07_1280x720_AppTVOS_Swim.png')",
+          backgroundImage: `url('${assetUrl("/images/TWDS11C_07_1280x720_AppTVOS_Swim.png")}')`,
           filter: "saturate(0.1) brightness(0.08)",
         }}
       />
@@ -46,13 +47,13 @@ export default function MemorialWall() {
 
       {/* Blood splatter overlay */}
       <img
-        src="/images/overlays/blood-splatter-png-44464.png"
+        src={assetUrl("/images/overlays/blood-splatter-png-44464.png")}
         alt=""
         aria-hidden="true"
         className="absolute top-0 left-0 w-1/3 opacity-[0.05] pointer-events-none"
       />
       <img
-        src="/images/overlays/blood-png-7140.png"
+        src={assetUrl("/images/overlays/blood-png-7140.png")}
         alt=""
         aria-hidden="true"
         className="absolute bottom-0 right-0 w-1/4 opacity-[0.04] pointer-events-none"

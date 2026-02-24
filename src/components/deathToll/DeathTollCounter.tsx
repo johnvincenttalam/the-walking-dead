@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer"
+import { assetUrl } from "../../utils/assetUrl"
 import { deathTollStats } from "../../data/deathTollStats"
 import SectionHeader from "../SectionHeader"
 import CounterStat from "./CounterStat"
@@ -23,7 +24,7 @@ export default function DeathTollCounter() {
 
       {/* Blood splatter overlay */}
       <img
-        src="/images/overlays/blood-splatter-png-44472.png"
+        src={assetUrl("/images/overlays/blood-splatter-png-44472.png")}
         alt=""
         aria-hidden="true"
         className="absolute top-0 right-0 w-1/2 opacity-[0.09] pointer-events-none"
@@ -31,7 +32,7 @@ export default function DeathTollCounter() {
 
       {/* Fog overlay */}
       <img
-        src="/images/overlays/isolate-realistic-white-fog-on-t.png"
+        src={assetUrl("/images/overlays/isolate-realistic-white-fog-on-t.png")}
         alt=""
         aria-hidden="true"
         className="absolute bottom-0 left-0 w-full opacity-[0.03] pointer-events-none"

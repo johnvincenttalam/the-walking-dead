@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer"
+import { assetUrl } from "../../utils/assetUrl"
 
 const stats = [
   { value: "11", label: "Seasons" },
@@ -16,7 +17,7 @@ export default function SeriesOverview() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('/images/Walking-Dead.png')",
+          backgroundImage: `url('${assetUrl("/images/Walking-Dead.png")}')`,
           backgroundPosition: "center top",
           filter: "saturate(0.2) brightness(0.12)", 
         }}

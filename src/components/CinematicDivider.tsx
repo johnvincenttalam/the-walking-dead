@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer"
+import { assetUrl } from "../utils/assetUrl"
 
 interface Props {
   quote?: string
@@ -17,7 +18,7 @@ export default function CinematicDivider({ quote, author }: Props) {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('/images/bg.png')",
+          backgroundImage: `url('${assetUrl("/images/bg.png")}')`,
           filter: "saturate(0.35) brightness(0.3)",
         }}
       />

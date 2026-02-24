@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import { assetUrl } from "../../utils/assetUrl"
 import { survivalRules } from "../../data/survivalRules"
 import type { SurvivalRule } from "../../data/survivalRules"
 import SectionHeader from "../SectionHeader"
@@ -17,7 +18,7 @@ export default function SurvivalGuide() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: "url('/images/LAND_16_9.png')",
+          backgroundImage: `url('${assetUrl("/images/LAND_16_9.png")}')`,
           filter: "saturate(0.2) brightness(0.1)",
         }}
       />

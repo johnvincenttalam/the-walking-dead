@@ -1,10 +1,11 @@
 import type { Character } from "../types/character"
+import { assetUrl } from "../utils/assetUrl"
 
 export const characters: Character[] = [
   {
     id: "rick-grimes",
     name: "Rick Grimes",
-    image: "/images/characters/rick.jpg",
+    image: assetUrl("/images/characters/rick.jpg"),
     status: "Alive",
     description:
       "A former sheriff's deputy who wakes from a coma to find the world overrun by walkers. Rick becomes the reluctant leader of a group of survivors, making impossible decisions to keep his people alive. His journey takes him from a man of law to a fierce protector willing to do whatever it takes.",
@@ -17,7 +18,7 @@ export const characters: Character[] = [
   {
     id: "daryl-dixon",
     name: "Daryl Dixon",
-    image: "/images/characters/daryl.jpg",
+    image: assetUrl("/images/characters/daryl.jpg"),
     status: "Alive",
     description:
       "A rough-edged survivalist and tracker who becomes one of the group's most loyal and dependable members. Initially an outsider, Daryl earns his place through actions rather than words, becoming Rick's right hand and the moral compass of the later seasons.",
@@ -30,7 +31,7 @@ export const characters: Character[] = [
   {
     id: "michonne",
     name: "Michonne",
-    image: "/images/characters/michonne.jpg",
+    image: assetUrl("/images/characters/michonne.jpg"),
     status: "Alive",
     description:
       "A katana-wielding warrior who arrives as a mysterious loner and becomes one of the most formidable survivors in the apocalypse. Michonne's strength is matched only by her intelligence and emotional depth as she learns to trust and love again.",
@@ -43,7 +44,7 @@ export const characters: Character[] = [
   {
     id: "negan",
     name: "Negan",
-    image: "/images/characters/negan.jpg",
+    image: assetUrl("/images/characters/negan.jpg"),
     status: "Alive",
     description:
       "The charismatic and brutal leader of the Saviors. Armed with his barbed-wire bat Lucille, Negan rules through fear and manipulation. Yet beneath the theatrics lies a complicated man shaped by loss, seeking order in chaos through the only means he understands.",
@@ -56,7 +57,7 @@ export const characters: Character[] = [
   {
     id: "carol-peletier",
     name: "Carol Peletier",
-    image: "/images/characters/carol.jpg",
+    image: assetUrl("/images/characters/carol.jpg"),
     status: "Alive",
     description:
       "Perhaps the most dramatically transformed character in the series. Carol evolves from an abused, timid wife into one of the deadliest and most cunning survivors. She wears many masks — homemaker, warrior, spy — and uses each to protect those she loves.",
@@ -69,7 +70,7 @@ export const characters: Character[] = [
   {
     id: "glenn-rhee",
     name: "Glenn Rhee",
-    image: "/images/characters/glenn.jpg",
+    image: assetUrl("/images/characters/glenn.jpg"),
     status: "Deceased",
     description:
       "A former pizza delivery boy who becomes one of the most resourceful and morally grounded survivors. Glenn's quick thinking and compassion make him invaluable, and his love story with Maggie becomes the emotional backbone of the series.",
@@ -82,7 +83,7 @@ export const characters: Character[] = [
   {
     id: "maggie-greene",
     name: "Maggie Greene",
-    image: "/images/characters/maggie.jpg",
+    image: assetUrl("/images/characters/maggie.jpg"),
     status: "Alive",
     description:
       "A farmer's daughter who transforms into one of the most capable and determined leaders in the apocalypse. Maggie's strength is forged through unimaginable loss, and her resolve to build a future drives the later seasons.",
@@ -95,7 +96,7 @@ export const characters: Character[] = [
   {
     id: "the-governor",
     name: "The Governor",
-    image: "/images/characters/governor.jpg",
+    image: assetUrl("/images/characters/governor.jpg"),
     status: "Deceased",
     description:
       "The charming and terrifying leader of Woodbury. Philip Blake presents a civilized facade while hiding a deeply unhinged psyche. His obsession with control and inability to let go make him one of the apocalypse's most dangerous men.",
@@ -108,7 +109,7 @@ export const characters: Character[] = [
   {
     id: "hershel-greene",
     name: "Hershel Greene",
-    image: "/images/characters/hershel.jpg",
+    image: assetUrl("/images/characters/hershel.jpg"),
     status: "Deceased",
     description:
       "A veterinarian and man of deep faith who opens his farm to Rick's group. Hershel becomes the moral conscience of the survivors, offering wisdom and compassion in a world that has largely abandoned both.",
@@ -121,7 +122,7 @@ export const characters: Character[] = [
   {
     id: "carl-grimes",
     name: "Carl Grimes",
-    image: "/images/characters/carl.jpg",
+    image: assetUrl("/images/characters/carl.jpg"),
     status: "Deceased",
     description:
       "Rick's son who grows up in the apocalypse, knowing no other world. Carl's journey from a scared child to a young man willing to die for a vision of peace defines the series' core message about the next generation.",
